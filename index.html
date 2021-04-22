@@ -287,45 +287,45 @@
       <!-- секция постоянные клиенты -->
       <section class="clients">
         <div class="container">
-          <h2 class="title__section">Постоянные клиенты</h2>
+          <h2 class="title__section title__section--margin">Постоянные клиенты</h2>
           <div class="">
             <ul class="list main__list">
-              <li class="list-clients">
+              <li class="clients__list">
                 <a href="" class="clients__link" target="_blank" rel="noopener noreferrer">
                   <svg class="clients__icon" width="44px" height="49px">
                     <use href="./images/icons.svg#logo-1"></use>
                   </svg>
                 </a>
               </li>
-              <li class="list-clients">
+              <li class="clients__list">
                 <a href="" class="clients__link" target="_blank" rel="noopener noreferrer">
                   <svg class="clients__icon" width="40px" height="52px">
                     <use href="./images/icons.svg#logo-2"></use>
                   </svg>
                 </a>
               </li>
-              <li class="list-clients">
+              <li class="clients__list">
                 <a href="" class="clients__link" target="_blank" rel="noopener noreferrer">
                   <svg class="clients__icon" width="41px" height="43px">
                     <use href="./images/icons.svg#logo-3"></use>
                   </svg>
                 </a>
               </li>
-              <li class="list-clients">
+              <li class="clients__list">
                 <a href="" class="clients__link" target="_blank" rel="noopener noreferrer">
                   <svg class="clients__icon" width="80px" height="42px">
                     <use href="./images/icons.svg#logo-4"></use>
                   </svg>
                 </a>
               </li>
-              <li class="list-clients">
+              <li class="clients__list">
                 <a href="" class="clients__link" target="_blank" rel="noopener noreferrer">
                   <svg class="clients__icon" width="59px" height="47px">
                     <use href="./images/icons.svg#logo-5"></use>
                   </svg>
                 </a>
               </li>
-              <li class="list-clients">
+              <li class="clients__list">
                 <a href="" class="icon clients__link" target="_blank" rel="noopener noreferrer">
                   <svg class="clients__icon" width="88px" height="45px">
                     <use href="./images/icons.svg#logo-6"></use>
@@ -338,29 +338,31 @@
       </section>
     </main>
     <!--Подвал-->
-    <footer class="page-footer">
+    <footer class="footer">
       <div class="container">
-        <div class="card-footer div-address">
-          <a href="./index.html" class="logo link-footer" lang="en"> <span class="logo__web">Web</span>Studio</a>
+        <div class="footer__div address__div">
+          <a href="./index.html" class="logo footer__link" lang="en"> <span class="logo__web">Web</span>Studio</a>
           <address class="address">
-            <ul class="site-footer">
-              <li class="list-footer">
+            <ul class="footer__site">
+              <li class="footer__list">
                 <a
                   href="https://goo.gl/maps/cqF2YYgnsSgprehL9"
                   target="_blank"
                   rel="noreferrer noopener"
-                  class="text-address"
+                  class="link__address"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="list-footer">
-                <a href="mailto:info@devstudio.com" class="link-contacts">info@devstudio.com</a>
+              <li class="footer__list">
+                <a href="mailto:info@devstudio.com" class="link__contacts footer__link--grey"> info@devstudio.com </a>
               </li>
-              <li class="list-footer"><a href="teii:+380961111111" class="link-contacts">+38 096 111 11 11</a></li>
+              <li class="footer__list">
+                <a href="teii:+380961111111" class="link__contacts footer__link--grey"> +38 096 111 11 11 </a>
+              </li>
             </ul>
           </address>
         </div>
-        <div class="card-footer div-icons">
+        <div class="footer__div div__icons">
           <h3 class="list__title">присоединяйтесь</h3>
           <ul class="list social-icons">
             <li class="social-icons__iteam">
@@ -393,11 +395,11 @@
             </li>
           </ul>
         </div>
-        <div class="card-footer div-mailling">
+        <div class="footer__div div__mailling">
           <h3 class="list__title">подпишитесь на рассылку</h3>
           <form>
-            <input class="form-field" type="email" name="E-mail" placeholder="E-mail" required />
-            <button class="form-button" type="submit">
+            <input class="form__field" type="email" name="E-mail" placeholder="E-mail" required />
+            <button class="form__button" type="submit">
               Подписаться
               <svg class="icon" fill="#fff" width="24">
                 <use href="./images/icons.svg#fly"></use>
@@ -407,57 +409,58 @@
         </div>
       </div>
     </footer>
+
     <!-- модальное окно -->
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
-        <button type="button" class="modal-button" data-close-modal>
-          <svg class="icon-modal">
+        <button type="button" class="modal__button modal__button--close" data-close-modal>
+          <svg class="modal__icon">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <p class="model-title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="model__title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="form" autocomplete="off">
-          <label class="form-label">
+          <label class="form__label">
             <span>Имя</span>
-            <input class="form-field-model" type="text" name="user-name" />
-            <svg class="icon-label">
+            <input class="form__field" type="text" name="user-name" />
+            <svg class="icon__label">
               <use href="./images/icons.svg#person"></use>
             </svg>
           </label>
 
-          <label class="form-label">
+          <label class="form__label">
             <span>Телефон</span>
-            <input class="form-field-model" type="text" name="user-phone" />
-            <svg class="icon-label">
+            <input class="form__field" type="text" name="user-phone" />
+            <svg class="icon__label">
               <use href="./images/icons.svg#phone"></use>
             </svg>
           </label>
-          <label class="form-label">
+          <label class="form__label">
             <span>Почта</span>
-            <input class="form-field-model" type="email" name="user-mail" pattern="[A-Za-z]^[ 0-9]+$" required />
-            <svg class="icon-label">
+            <input class="form__field" type="email" name="user-mail" pattern="[A-Za-z]^[ 0-9]+$" required />
+            <svg class="icon__label">
               <use href="./images/icons.svg#letter"></use>
             </svg>
           </label>
-          <label class="form-label">
+          <label class="form__label">
             <span>Комментарий</span>
             <textarea
-              class="form-field-model form-text"
+              class="form__field form__text"
               name="user-coment"
               rows="7"
               placeholder="Введите текст"
               required
             ></textarea>
           </label>
-          <label class="form-label-check">
-            <input class="form-field-check" type="checkbox" name="user-agree" value="agree" required />
-            <span class="icon-check"></span>
-            <span class="agree-text">
+          <label class="form__label form__label--check">
+            <input class="form__field--check" type="checkbox" name="user-agree" value="agree" required />
+            <span class="icon__check"></span>
+            <span class="text__agree">
               Соглашаюсь с рассылкой и принимаю
               <a href="" class="">Условия договора</a>
             </span>
           </label>
-          <button class="button-modal" type="submit" disabled>Отправить</button>
+          <button class="button__modal" type="submit" disabled>Отправить</button>
         </form>
       </div>
 
