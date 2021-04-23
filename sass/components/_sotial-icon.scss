@@ -1,0 +1,25 @@
+.social-icons__iteam + .social-icons__iteam {
+  margin-left: 10px;
+}
+.social-icons__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 50%;
+
+  transition-property: fill, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icons__link:hover .icon,
+.social-icons__link:focus .icon {
+  fill: var(--button-text-color-hover-focus);
+}
+.social-icons__link:hover,
+.social-icons__link:focus {
+  background-color: var(--accent-text-color);
+}
