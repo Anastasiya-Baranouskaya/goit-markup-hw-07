@@ -28,10 +28,10 @@
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__link--grey:hover,
-.footer__link--grey:active {
-  color: var(--accent-text-color);
+  &:hover,
+  &:active {
+    color: var(--accent-text-color);
+  }
 }
 
 .link__address {
@@ -40,10 +40,10 @@
   color: #ffffff;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.link__address:focus,
-.link__address:hover {
-  color: var(--accent-text-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-text-color);
+  }
 }
 
 .div__icons {
@@ -87,27 +87,27 @@
   margin-right: 12px;
   color: #fff;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__field:-webkit-autofill,
-.footer__field:-webkit-autofill:hover,
-.footer__field:-webkit-autofill:focus {
-  -webkit-text-fill-color: #fff;
-  -webkit-box-shadow: 0 0 0px 1000px var(--hero-footer-background-color) inset;
+  &:-webkit-autofill,
+  &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus {
+    -webkit-text-fill-color: #fff;
+    -webkit-box-shadow: 0 0 0px 1000px var(--hero-footer-background-color) inset;
+  }
+  &:focus,
+  &:hover {
+    outline: none;
+  }
+  &::placeholder {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:checked::placeholder {
+    color: #fff;
+  }
 }
 
-.footer__field::placeholder {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer__field:checked::placeholder {
-  color: #fff;
-}
-.footer__field:focus,
-.footer__field:hover {
-  outline: none;
-}
 .footer__button {
   width: 200px;
   height: 50px;

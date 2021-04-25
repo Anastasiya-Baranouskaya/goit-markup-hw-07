@@ -5,28 +5,29 @@
 }
 .quality__list {
   max-width: 270px;
+  &:nth-child(1):before {
+    background-image: url(../images/icons/antenna.svg);
+  }
+  &:nth-child(2):before {
+    background-image: url(../images/icons/clock.svg);
+  }
+  &:nth-child(3):before {
+    background-image: url(../images/icons/diagram.svg);
+  }
+  &:nth-child(4):before {
+    background-image: url(../images/icons/astronaut.svg);
+  }
+  &::before {
+    display: flex;
+    content: '';
+    height: 120px;
+    background-color: #f5f4fa;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
-.quality__list::before {
-  display: flex;
-  content: '';
-  height: 120px;
-  background-color: #f5f4fa;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.quality__list:nth-child(1):before {
-  background-image: url(../images/icons/antenna.svg);
-}
-.quality__list:nth-child(2):before {
-  background-image: url(../images/icons/clock.svg);
-}
-.quality__list:nth-child(3):before {
-  background-image: url(../images/icons/diagram.svg);
-}
-.quality__list:nth-child(4):before {
-  background-image: url(../images/icons/astronaut.svg);
-}
+
 .quality__text {
   font-weight: normal;
   font-size: 14px;
